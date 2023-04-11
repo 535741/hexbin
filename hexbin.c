@@ -26,9 +26,9 @@ void output1(void){
     fflush(stdout);
     fgets(input, 200, stdin);
     sscanf(input, "%i", &in);
-    printf("(Decimal)->%i\t(Hex)->0x%X\t(Binary)->", in, in);
+    printf("(Decimal)->%i\n(Hex)->0x%X\n(Binary)->", in, in);
     intToBin(in);
-    printf("\t(Octal)->%o\n", in);
+    printf("\n(Octal)->%o\n", in);
 }
 
 void output2(void){
@@ -38,9 +38,9 @@ void output2(void){
     fflush(stdout);
     fgets(input, 200, stdin);
     sscanf(input, "%X", &in);
-    printf("(Decimal)->%i\t(Hex)->0x%X\t(Binary)->", in, in);
+    printf("(Decimal)->%i\n(Hex)->0x%X\n(Binary)->", in, in);
     intToBin(in);
-    printf("\t(Octal)->%o\n", in);
+    printf("\n(Octal)->%o\n", in);
 }
 
 void output3(void){
@@ -50,9 +50,9 @@ void output3(void){
     fflush(stdout);
     fgets(input, 200, stdin);
     in = strtol(input, NULL, 2);
-    printf("(Decimal)->%i\t(Hex)->0x%X\t(Binary)->", in, in);
+    printf("(Decimal)->%i\n(Hex)->0x%X\n(Binary)->", in, in);
     intToBin(in);
-    printf("\t(Octal)->%o\n", in);
+    printf("\n(Octal)->%o\n", in);
 }
 
 void output4(void){
@@ -62,9 +62,9 @@ void output4(void){
     fflush(stdout);
     fgets(input, 200, stdin);
     sscanf(input, "%o", &in);
-    printf("(Decimal)->%i\t(Hex)->0x%X\t(Binary)->", in, in);
+    printf("(Decimal)->%i\n(Hex)->0x%X\n(Binary)->", in, in);
     intToBin(in);
-    printf("\t(Octal)->%o\n", in);
+    printf("\n(Octal)->%o\n", in);
 }
 
 int main(void){
